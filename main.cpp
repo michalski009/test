@@ -8,61 +8,61 @@ int main()
 
     using namespace std;
 int waga, wzrost;
-float bmi;
+float BMI;
 
 
 
-cout << "Podaj swoj wzrost(cm): ";
+cout << "Ile masz centymentOw wzroztu? ";
 cin >> wzrost;
 
-while(wzrost < 40 or wzrost > 300)
+while(wzrost < 40 || wzrost > 300)
 {
-   cout << "Wzrost nieprawidlowy: Podaj ponownie: ";
+   cout << "To nie jest poprawny wzrost. ";
    cin >> wzrost;
 }
 
-cout << "Podaj swoja wage(kg): ";
+cout << "Jaka jest Twoja waga? ";
 cin >> waga;
 
-while(waga < 30 or waga > 500)
+while(waga < 30 || waga > 500)
 {
-   cout << "Waga nieprawidlowa: Podaj ponownie: ";
+   cout << "To nie jest poprawna waga. ";
    cin >> waga;
 }
 
-bmi = waga / (wzrost*wzrost/10000.);
+BMI = waga / (wzrost*wzrost/10000.);
 
-cout << "Twoje BMI to:" << bmi << "/n";
+cout << "BMI dla podanych parametrow wynosi:" << BMI << "\n";
 
 
 
-if(bmi < 15)
+if(BMI < 15)
 {
-cout << "Zacznij wreszcie jeść." << endl;
+cout << "Zacznij wreszcie jesc." << endl;
 }
 
-if(bmi < 18 and bmi > 15)
+if(BMI < 18 && BMI > 15)
 {
-cout << "Masz niedowage! Skorzystaj z bardziej tluszczowej diety." << endl;
+cout << "Za malo wazysz, zrob cos z tym." << endl;
 }
 
-if(bmi > 18 and bmi < 25)
+if(BMI > 18 && BMI < 25)
 {
-cout << "Twoje BMI jest idealne!" << endl;
+cout << "Niezle BMI, gratuluje" << endl;
 }
 
-if(bmi > 25 and bmi < 30)
+if(BMI > 25 && BMI < 30)
 {
-cout << "Masz nadwage! Skorzystaj z diety ograniczajacej zawartosc tluszczu." << endl;
+cout << "Alert: nadwaga!" << endl;
 }
 
-if(bmi > 30 and bmi < 35)
+if(BMI > 30 && BMI < 35)
 {
-cout << "Jestes otyly! Zrzuc pare kilo i bedzie ok." << endl;
+cout << "No, no, przyda się troche schudnac." << endl;
 }
-if(bmi > 35)
+if(BMI > 35)
 {
-cout << "Twoje BMI jest idealne! Radzilbym jednak przejsc na diete, zawierajaca duzo owocow. " << endl;
+cout << "Dobrze, ale przydalo by sie pare owockow czasem zjesc ;) " << endl;
 }
 
 return 0;
